@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+$white: white;
+$black: black;
+
+.myNavbar {
+        margin-bottom: 0;
+        background: $black;
+}
+#logo{
+  float : left;
+  text-size:1.7em;
+  text-transform:uppercase;
+  text-weight:bold;
+}
+
+
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: url('../images/blog_image.jpg');
+  height:550px;
+  margin-top: 10px;
+}
+
+.jumbotron h1{
+  color: #fff;
+}
