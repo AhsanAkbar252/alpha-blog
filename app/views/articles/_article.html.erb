@@ -11,10 +11,12 @@
             <small>Created by:<%= article.user.username if (article.user) %>,<%= time_ago_in_words(article.created_at) %> ago, last updated <%= time_ago_in_words(article.updated_at) %>ago</small>
           </div>
         </div>
+        <% if logged_in? && current_user == article.user %>
           <div class="article_actions">
             <%= link_to "delete article",article_path(article), method: :delete, data:{confirm: "Are you sure to delete the article"}, class: "btn btn-sm btn-danger" %>
             <%= link_to "Edit article", edit_article_path(article), class: "btn btn-primary btn-sm"%> 
           </div>
+        <% end %>
     </div>
   </div>
 </div>
